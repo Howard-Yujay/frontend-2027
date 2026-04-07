@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background-color: #6b95eb;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+}
+
+.card {
+    width: 700px;
+    margin: 40px auto;
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid #dbe2ea;
+    border-radius: 16px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: #022d1c;
+}
+
+.little-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: rgb(12, 162, 37);
+}
+
+.desc {
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.section-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #111827;
+}
+
+.skill-list {
+    padding-left: 20px;
+    margin-bottom: 24px;
+    color: #374151;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #eb6093;
+}

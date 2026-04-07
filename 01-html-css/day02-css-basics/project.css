@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color:#1ba784;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+}
+
+.card {
+    width: 800px;
+    margin: 40px auto;
+    padding: 32px;
+    border: 6px solid #eef7f2;
+    border-radius: 16px;
+    background-color:#FFFEF9 ;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.section-title {
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.subsection-title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.skill-list {
+    margin-bottom: 8px;
+    font-size: 18px;
+    padding-left: 32px;
+    line-height: 1.8;
+}
+
+/* .skill-list li {
+    margin-bottom: 8px;
+} */
+
+.desc {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.btn {
+    margin-top: 12px;
+    margin-bottom: 0px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 12px;
+    background-color: #c6d7db;
+    color: #4eae79;
+    font-weight: 700;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #3d74cd;
+}
