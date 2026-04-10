@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>前端求职状态卡</title>
+        <link rel="stylesheet" href="./style-practice.css" />
+        <script src="./main-practice.js" defer></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <h1>前端求职状态卡</h1>
+            <p>姓名: Howard</p>
+            <p>专业: 微电子</p>
+            <p>求职方向: Web前端</p>
+            <p>城市意向: 广州or深圳</p>
+            <p>当前学习进度: Html Css JavaScript基础</p>
+
+            <p id="statusText">当前状态: 学习</p>
+            <p id="countText">学习进度: 0</p>
+            <p id="resultText">今日学习评价: 未知</p>
+
+
+            <div class="button-group">
+                <button id="toggleBtn">切换状态</button>
+                <button id="addBtn">计数</button>
+                <button id="clearBtn">清零(偷懒)</button>
+                <button id="judgeBtn">输入今日学习时长</button>
+            </div>
+        </div>
+    </body>
+</html>

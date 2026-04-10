@@ -1,0 +1,54 @@
+/* 1.做全局统一
+2.做主要容器
+3.做文字层级
+4.做操作区 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft YaHei", sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+.card {
+    width: 420px;
+    margin: 60px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #487df1;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}

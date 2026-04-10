@@ -18,6 +18,7 @@ I am currently learning from scratch and using this repo to keep track of:
 ### Week 1
 - Day 1: HTML basic structure, headings, paragraphs, lists, links, images
 - Day 2: CSS basics, external stylesheet, selectors, colors, spacing, borders, simple page styling
+- Day 3: Js basics, variables, if/else, loops, DOM selection, button click events, simple interactive page
 
 ## Folder structure
 
@@ -34,6 +35,14 @@ I am currently learning from scratch and using this repo to keep track of:
     index.html
     project.css
     style.css
+02-javascript/
+    day03-js-basics/
+      index-practice.html
+      index.html
+      main-practice.js
+      main.js
+      style-practice.css
+      style.css
 
 ```
 ## Notes
@@ -45,3 +54,4 @@ This repository is mainly used to record my learning process and growth.
 - build a solid HTML/CSS/JavaScript foundation
 - practice every day
 - prepare for frontend internship step by step
+- learn with thinking
