@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>设备状态面板</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="card">
+            <h1>设备状态面板</h1>
+            <h2>统计区</h2>
+            <p id="runningCountText">运行中设备数: 0</p>
+            <p id="faultCountText">故障设备数: 0</p>
+
+            <h2>筛选区</h2>
+            <div class="filter-group">
+                <button id="filter-all">全部</button>
+                <button id="filter-running">运行</button>
+                <button id="filter-standby">待机</button>
+                <button id="filter-fault">故障</button>
+            </div>
+
+            <h2>设备列表</h2>
+            <div id="deviceList"></div>
+            <button id="resetToStandbyBtn" class="filter-btn">全部恢复待机</button>
+        </div>
+
+    </body>
+</html>
