@@ -60,7 +60,7 @@ function renderSummary() {  //统计数量
     faultCountText.textContent = `故障设备数: ${faultCount}`;
 }
 
-function getFilteredDevices() { //得到应展示的设备列表
+function getFilteredDevices() { //筛选状态
     if (currentFilter === "全部") {
         return devices;
     } else {
@@ -117,7 +117,7 @@ function renderPage() { //统一刷新页面/总刷新函数
     updateFilterButtons();
 }
 
-function updateFilterButtons() {    //给当前按钮加高亮
+function updateFilterButtons() {    //给当前筛选按钮加高亮
     filterAllBtn.classList.remove("filter-active");
     filterRunningBtn.classList.remove("filter-active");
     filterStandbyBtn.classList.remove("filter-active");
