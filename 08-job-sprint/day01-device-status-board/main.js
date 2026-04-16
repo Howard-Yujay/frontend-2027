@@ -1,16 +1,8 @@
-console.log("device status board start");
-
-function sayHello() {
-    console.log("hello");
-}
-
-sayHello();
-
 const runningCountText = document.querySelector("#runningCountText");
 const faultCountText = document.querySelector("#faultCountText");
 const deviceList = document.querySelector("#deviceList");
 
-const devices = [
+const devices = [   //核心数据
     {
         name:"温度传感器 A1",
         type:"传感器",
@@ -32,7 +24,6 @@ const devices = [
         status:"运行",
     },
 ];
-// device是一个数组 数组里有4个设备 每个设备都是一个对象
 
 const filterAllBtn = document.querySelector("#filter-all");
 const filterRunningBtn = document.querySelector("#filter-running");
@@ -41,9 +32,9 @@ const filterFaultBtn = document.querySelector("#filter-fault");
 
 const resetToStandbyBtn = document.querySelector("#resetToStandbyBtn");
 
-let currentFilter = "全部";
+let currentFilter = "全部"; //核心数据
 
-function getNextStatus(status) {
+function getNextStatus(status) {    //切换状态
     if (status === "运行") {
         return "待机";
     } else if (status === "待机") {
@@ -53,7 +44,7 @@ function getNextStatus(status) {
     }
 }
 
-function renderSummary() {
+function renderSummary() {  //统计数量
     let runningCount = 0;
     let faultCount = 0;
 
@@ -69,17 +60,17 @@ function renderSummary() {
     faultCountText.textContent = `故障设备数: ${faultCount}`;
 }
 
-function getFilteredDevices() {
+function getFilteredDevices() { //得到应展示的设备列表
     if (currentFilter === "全部") {
         return devices;
     } else {
         return devices.filter(function(device){
-            return device.status === currentFilter;
+            return device.status === currentFilter; //返回布尔值
         });
     }
 }
 
-function renderDevices(list) {
+function renderDevices(list) {  //把设备列表拼成HTML，渲染；切换状态，渲染
     let html = "";
 
     for (let i = 0; i < list.length; i++) {
@@ -119,14 +110,14 @@ function renderDevices(list) {
     }
 }
 
-function renderPage() {  //统一刷新页面
+function renderPage() { //统一刷新页面/总刷新函数
     const filteredDevices = getFilteredDevices();
     renderDevices(filteredDevices);
     renderSummary();
     updateFilterButtons();
 }
 
-function updateFilterButtons() {
+function updateFilterButtons() {    //给当前按钮加高亮
     filterAllBtn.classList.remove("filter-active");
     filterRunningBtn.classList.remove("filter-active");
     filterStandbyBtn.classList.remove("filter-active");
